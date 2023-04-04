@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Definir los parámetros del modelo
-beta = 0.2 # Tasa de infección
-gamma = 0.1 # Tasa de recuperación
+beta = 0.02 # Tasa de infección
+gamma = 0.01 # Tasa de recuperación
 N = 10000 # Población total
 S0 = 10000 # Susceptibles iniciales
 I0 = 10 # Infectados iniciales
@@ -12,7 +12,7 @@ I0 = 10 # Infectados iniciales
 # Definir el intervalo de tiempo y el paso
 t0 = 0 # Tiempo inicial
 tf = 100 # Tiempo final
-dt = 0.000001 # Paso de tiempo
+dt = 0.001 # Paso de tiempo
 t = np.arange(t0, tf + dt, dt) # Vector de tiempo
 
 # Definir la función del sistema SIS
